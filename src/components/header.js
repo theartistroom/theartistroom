@@ -103,7 +103,7 @@ function Header() {
                             textDecoration: 'none',
                         }}
                     >
-                        TheArtistRoom
+                    TheArtistRoom
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', }}>
                         {pages.map((page) => (
