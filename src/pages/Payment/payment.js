@@ -3,18 +3,35 @@ import { Box, Container, Grid, Typography, TextField, FormControl, Select, MenuI
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import PhoneIcon from '@mui/icons-material/Phone';
 import PaymentIcon from '@mui/icons-material/Payment';
+import HomeIcon from '@mui/icons-material/Home';
+import { useNavigate } from 'react-router-dom';
 
 const Payment = () => {
+  const navigate = useNavigate();
   return (
     <Container maxWidth="lg">
+    <Box mt={4} mb={4} display="flex" justifyContent="center">
+      <HomeIcon
+        onClick={() => navigate('/')}
+        sx={{
+          fontSize: 40,
+          cursor: 'pointer',
+          color: '#D45591',
+          backgroundColor: '#fff',
+          padding: 1,
+          borderRadius: '50%',
+          boxShadow: '0 0 8px rgba(0, 0, 0, 0.1)'
+        }}
+      />
+    </Box>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Box p={2} border="1px solid #eee" borderRadius="8px">
-            <Typography variant="h6" color="primary" gutterBottom>
-              Connected Soul - Gwalior
+            <Typography variant="h6" color="#D45591" gutterBottom>
+              The Artist Room - Gwalior
             </Typography>
             <Box mt={2} mb={2}>
-              <img src="https://s3.ap-south-1.amazonaws.com/rzp-prod-merchant-assets/payment-link/description/php%20creative%20(11)_jjfau2o59umkkj.jpeg" alt="Poetry House Party" style={{ width: '100%', borderRadius: '8px' }} />
+              <img src="/assets/images/paymentimage.png" alt="Poetry House Party" style={{ width: '100%', borderRadius: '8px' }} />
             </Box>
             <Typography variant="body1" gutterBottom>
               Contact Us:
@@ -22,13 +39,13 @@ const Payment = () => {
             <Box display="flex" alignItems="center" mb={1}>
               <ContactMailIcon sx={{ mr: 1 }} />
               <Typography variant="body2">
-                contact@connectedsoul.in
+                theartistroom2025@gmail.com
               </Typography>
             </Box>
             <Box display="flex" alignItems="center" mb={1}>
               <PhoneIcon sx={{ mr: 1 }} />
               <Typography variant="body2">
-                9370383164
+                +91 7974717572
               </Typography>
             </Box>
             <Box mt={2}>
@@ -46,7 +63,7 @@ const Payment = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Box p={2} border="1px solid #eee" borderRadius="8px">
-            <Typography variant="h6" color="primary" gutterBottom>
+            <Typography variant="h6" color="#D45591" gutterBottom>
               Payment Details
             </Typography>
             <Box mt={2}>
@@ -105,7 +122,7 @@ const Payment = () => {
                 </Select>
               </FormControl>
               <Box mt={2} display="flex" justifyContent="center" alignItems="center">
-                <Button variant="contained" color="secondary" size="large">
+                <Button variant="contained" size="large"  sx={{ backgroundColor: '#D45591' }}>
                   Register ₹605.00
                 </Button>
               </Box>

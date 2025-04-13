@@ -9,9 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
-// import logo from '../../public/assets/images/theartistroomlogo.png';
 
 const pages = ['Book Now', 'Contact Us'];
 
