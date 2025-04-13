@@ -27,9 +27,9 @@ const Information = () => {
             Calling you all to a chilled house party where you get to meet new people, share your views, listen to beautiful artists, and become a part of our community.
           </Typography>
           <Typography variant="body1" paragraph>
-            <CalendarToday sx={{ verticalAlign: 'middle' }} /> Saturday, 22nd June'24 <br />
-            <AccessTime sx={{ verticalAlign: 'middle' }} /> 6:00pm - 10:00pm <br />
-            <LocationOn sx={{ verticalAlign: 'middle' }} /> Bombay Hospital Square, Indore <span style={{ color: 'red' }}>Secret Location*</span> <br />
+            <CalendarToday sx={{ verticalAlign: 'middle' }} /> Saturday, 26th June'26 <br />
+            <AccessTime sx={{ verticalAlign: 'middle' }} /> 6:30pm - 10:00pm <br />
+            <LocationOn sx={{ verticalAlign: 'middle' }} /> Near DB City, Gwalior <span style={{ color: 'red' }}>Secret Location*</span> <br />
             <Typography variant="body2" color="textSecondary">
               *Exact location will be revealed after you register
             </Typography>
