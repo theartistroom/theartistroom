@@ -27,7 +27,7 @@ const Information = () => {
             Calling you all to a chilled house party where you get to meet new people, share your views, listen to beautiful artists, and become a part of our community.
           </Typography>
           <Typography variant="body1" paragraph>
-            <CalendarToday sx={{ verticalAlign: 'middle' }} /> Saturday, 26th June'26 <br />
+            <CalendarToday sx={{ verticalAlign: 'middle' }} /> Saturday, 26th April 2025 <br />
             <AccessTime sx={{ verticalAlign: 'middle' }} /> 6:30pm - 10:00pm <br />
             <LocationOn sx={{ verticalAlign: 'middle' }} /> Near DB City, Gwalior <span style={{ color: 'red' }}>Secret Location*</span> <br />
             <Typography variant="body2" color="textSecondary">
