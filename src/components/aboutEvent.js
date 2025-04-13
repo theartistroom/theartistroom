@@ -13,7 +13,7 @@ const AboutEvent = () => {
                   justifyContent="center"
                 >
                     <Grid item xs={12} style={{marginBottom: '10px'}}>
-                        <Typography variant="h5">WHAT IS Connected Souls?</Typography>
+                        <Typography variant="h5">WHAT IS Artist Room?</Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="h3">About the Event</Typography>
