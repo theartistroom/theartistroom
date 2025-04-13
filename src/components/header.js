@@ -64,6 +64,23 @@ function Header() {
                     <b>The Artist Room</b>
                     </Typography>
 
+                    <Typography
+                        variant="h5"
+                        noWrap
+                        component="a"
+                        href="#app-bar-with-responsive-menu"
+                        sx={{
+                            mr: 2,
+                            display: { xs: 'flex', md: 'none' },
+                            flexGrow: 1,
+                            fontFamily: 'Arial, sans-serif',
+                            fontWeight: 500,
+                            color: '#D45591',
+                            textDecoration: 'none',
+                        }}
+                    >
+                        The Artist Room
+                    </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -100,24 +117,6 @@ function Header() {
                             ))}
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, color: '#f7567c' }} />
-                    <Typography
-                        variant="h5"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'Arial, sans-serif',
-                            fontWeight: 500,
-                            color: '#f7567c',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        TheArtistRoom
-                    </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', }}>
                         {pages.map((page) => (
                             <Button
