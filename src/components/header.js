@@ -48,7 +48,7 @@ function Header() {
                             textDecoration: 'none',
                         }}
                     >
-                    The Artist Roo
+                    The Artist Room
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
