@@ -48,7 +48,7 @@ function Header() {
                             textDecoration: 'none',
                         }}
                     >
-                        Connected Souls
+                    The Artist Roo
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
