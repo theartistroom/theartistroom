@@ -18,7 +18,7 @@ const Footer = () => {
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} sm={4}>
             <Typography variant="h6">
-              Connected Soul
+              The Artist Room
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
@@ -39,7 +39,7 @@ const Footer = () => {
           </Grid>
           <Grid item xs={12} sm={4} display="flex" justifyContent="flex-end">
             <Typography variant="body2">
-              &copy; 2024 Abhishek Bro LIMITED. All rights reserved.
+              &copy; 2025 The Artist Room Ltd. All rights reserved.
             </Typography>
           </Grid>
         </Grid>
