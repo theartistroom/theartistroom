@@ -16,32 +16,45 @@ const Footer = () => {
     >
       <Container maxWidth="lg">
         <Grid container spacing={2} alignItems="center">
+          
+          {/* Left: Logo */}
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6">
-              The Artist Room
-            </Typography>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <Typography variant="body1" align="center">
-              Follow us on
-            </Typography>
-            <Box display="flex" justifyContent="center" mt={1}>
-              <IconButton href="https://www.facebook.com" target="_blank" color="inherit">
-                <FacebookIcon />
-              </IconButton>
-              <IconButton href="https://www.instagram.com" target="_blank" color="inherit">
-                <InstagramIcon />
-              </IconButton>
-              <IconButton href="https://www.youtube.com" target="_blank" color="inherit">
-                <YouTubeIcon />
-              </IconButton>
+            <Box sx={{ textAlign: { xs: 'center', sm: 'left' } }}>
+              <Typography variant="h6">
+                The Artist Room
+              </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={4} display="flex" justifyContent="flex-end">
-            <Typography variant="body2">
-              &copy; 2025 The Artist Room Ltd. All rights reserved.
-            </Typography>
+
+          {/* Center: Social */}
+          <Grid item xs={12} sm={4}>
+            <Box sx={{ textAlign: 'center' }}>
+              <Typography variant="body1">
+                Follow us on
+              </Typography>
+              <Box display="flex" justifyContent="center" mt={1}>
+                <IconButton href="https://www.facebook.com" target="_blank" color="inherit">
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton href="https://www.instagram.com" target="_blank" color="inherit">
+                  <InstagramIcon />
+                </IconButton>
+                <IconButton href="https://www.youtube.com" target="_blank" color="inherit">
+                  <YouTubeIcon />
+                </IconButton>
+              </Box>
+            </Box>
           </Grid>
+
+          {/* Right: Copyright */}
+          <Grid item xs={12} sm={4}>
+            <Box sx={{ textAlign: { xs: 'center', sm: 'right' } }}>
+              <Typography variant="body2">
+                &copy; 2025 The Artist Room Ltd. All rights reserved.
+              </Typography>
+            </Box>
+          </Grid>
+
         </Grid>
       </Container>
     </Box>
