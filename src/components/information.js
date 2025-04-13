@@ -14,7 +14,7 @@ const Information = () => {
     <Container sx={{ py: 4 }}>
       <Grid container spacing={4} justifyContent="center" alignItems="center">
         <Grid item xs={12} md={6}>
-          <Typography variant="h3" gutterBottom>
+          <Typography variant="h4" gutterBottom>
            The Artist Room
           </Typography>
           <Typography variant="h6" color="textSecondary" paragraph>
