@@ -7,15 +7,15 @@ const Information = () => {
   const navigate = useNavigate();
 
   const handlePayment = () => {
-    navigate('/payment'); 
+    navigate('/payment');
   }
 
   return (
     <Container sx={{ py: 4 }}>
       <Grid container spacing={4} justifyContent="center" alignItems="center">
         <Grid item xs={12} md={6}>
-          <Typography variant="h4" gutterBottom>
-           The Artist Room
+          <Typography variant="h4" sx={{ fontSize: '2.5rem' }} gutterBottom>
+            The Artist Room
           </Typography>
           <Typography variant="h6" color="textSecondary" paragraph>
             Feeling Stressed With Hectic Life? <br />
@@ -34,22 +34,22 @@ const Information = () => {
               *Exact location will be revealed after you register
             </Typography>
           </Typography>
-          <Button 
-            variant="contained" 
-            color="primary" 
+          <Button
+            variant="contained"
+            color="primary"
             size="large"
             onClick={handlePayment}
             sx={{
-                my: 2,
-                color: 'white',
-                display: 'block',
-                backgroundColor: '#D45591',
-                margin: '0px 10px',
-                "&:hover": {
-                    backgroundColor: "#D45591"
-                }
+              my: 2,
+              color: 'white',
+              display: 'block',
+              backgroundColor: '#D45591',
+              margin: '0px 10px',
+              "&:hover": {
+                backgroundColor: "#D45591"
+              }
             }}
-        >
+          >
             Book Now for ₹599/-
           </Button>
           <Typography variant="h6" sx={{ mt: 4 }}>
