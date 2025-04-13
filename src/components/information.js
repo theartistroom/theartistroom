@@ -15,7 +15,7 @@ const Information = () => {
       <Grid container spacing={4} justifyContent="center" alignItems="center">
         <Grid item xs={12} md={6}>
           <Typography variant="h3" gutterBottom>
-            Connected Soul
+           The Artist Room
           </Typography>
           <Typography variant="h6" color="textSecondary" paragraph>
             Feeling Stressed With Hectic Life? <br />
