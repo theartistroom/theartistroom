@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <Box
       sx={{
-        background: '#182848',
+        background: '#D45591',
         color: 'white',
         py: 3,
         mt: 8

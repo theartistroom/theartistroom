@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { useNavigate } from 'react-router-dom';
+// import logo from '../../public/assets/images/theartistroomlogo.png';
 
 const pages = ['Book Now', 'Contact Us'];
 
@@ -24,7 +25,7 @@ function Header() {
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
-        navigate('/payment'); 
+        navigate('/payment');
     };
 
 
@@ -33,6 +34,18 @@ function Header() {
         <AppBar position="static" color='transparent'>
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
+                    <img
+                        src="/assets/images/theartistroomlogo.png"
+                        alt="The Artist Room Logo"
+                        style={{
+                            height: 65,
+                            marginRight: 12,
+                            borderRadius: 8,
+                            backgroundColor: '#fff',
+                            padding: 4,
+                            boxShadow: '0 0 8px rgba(0, 0, 0, 0.1)',
+                          }}
+                    />
                     
                     <Typography
                         variant="h6"
@@ -44,11 +57,11 @@ function Header() {
                             display: { xs: 'none', md: 'flex' },
                             fontFamily: 'Arial, sans-serif',
                             fontWeight: 500,
-                            color: '#f7567c',
+                            color: '#D45591',
                             textDecoration: 'none',
                         }}
                     >
-                    The Artist Room
+                    <b>The Artist Room</b>
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -103,7 +116,7 @@ function Header() {
                             textDecoration: 'none',
                         }}
                     >
-                    TheArtistRoom
+                        TheArtistRoom
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', }}>
                         {pages.map((page) => (
@@ -114,10 +127,10 @@ function Header() {
                                     my: 2,
                                     color: 'white',
                                     display: 'block',
-                                    backgroundColor: '#f7567c',
+                                    backgroundColor: '#D45591',
                                     margin: '0px 10px',
                                     "&:hover": {
-                                        backgroundColor: "#f7567c"
+                                        backgroundColor: "#D45591"
                                     }
                                 }}
                             >

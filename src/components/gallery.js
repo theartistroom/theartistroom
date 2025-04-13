@@ -52,10 +52,10 @@ const Gallery = () => {
                 my: 2,
                 color: 'white',
                 display: 'block',
-                backgroundColor: '#f7567c',
+                backgroundColor: '#D45591',
                 margin: '0px 10px',
                 "&:hover": {
-                    backgroundColor: "#f7567c"
+                    backgroundColor: "#D45591"
                 }
             }}
         >

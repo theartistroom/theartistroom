@@ -29,7 +29,7 @@ const Information = () => {
           <Typography variant="body1" paragraph>
             <CalendarToday sx={{ verticalAlign: 'middle' }} /> Saturday, 26th April 2025 <br />
             <AccessTime sx={{ verticalAlign: 'middle' }} /> 6:30pm - 10:00pm <br />
-            <LocationOn sx={{ verticalAlign: 'middle' }} /> Near DB City, Gwalior <span style={{ color: 'red' }}>Secret Location*</span> <br />
+            <LocationOn sx={{ verticalAlign: 'middle' }} /> Near DB City, Gwalior <span style={{ color: '#D45591' }}>Secret Location*</span> <br />
             <Typography variant="body2" color="textSecondary">
               *Exact location will be revealed after you register
             </Typography>
@@ -43,10 +43,10 @@ const Information = () => {
                 my: 2,
                 color: 'white',
                 display: 'block',
-                backgroundColor: '#f7567c',
+                backgroundColor: '#D45591',
                 margin: '0px 10px',
                 "&:hover": {
-                    backgroundColor: "#f7567c"
+                    backgroundColor: "#D45591"
                 }
             }}
         >
