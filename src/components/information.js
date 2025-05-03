@@ -15,16 +15,16 @@ const Information = () => {
       <Grid container spacing={4} justifyContent="center" alignItems="center">
         <Grid item xs={12} md={6}>
           <Typography variant="h4" sx={{ fontSize: '2.5rem' }} gutterBottom>
-            The Artist Room
+            Welcome to The Artist Room
           </Typography>
           <Typography variant="h6" color="textSecondary" paragraph>
-            Feeling Stressed With Hectic Life? <br />
-            Not Finding Motivation to Make New Friends? <br />
-            Want A Day To Relax and Enjoy Good Vibes? <br />
-            Poetry House Party Is Your Ultimate Answer!
+            Overwhelmed by the Chaos of Everyday Life? <br />
+            Struggling to Find Inspiration or New Connections? <br />
+            Need a Day to Unwind, Create, and Feel Good? <br />
+            The Artist Room Experience is Just What You Need!
           </Typography>
           <Typography variant="body1" paragraph>
-            Calling you all to a chilled house party where you get to meet new people, share your views, listen to beautiful artists, and become a part of our community.
+            You're invited to a laid-back creative gathering where you can meet new faces, share your thoughts, enjoy soulful performances, and become part of a welcoming artistic circle.
           </Typography>
           <Typography variant="body1" paragraph>
             <CalendarToday sx={{ verticalAlign: 'middle' }} /> Saturday, 26th April 2025 <br />
