@@ -32,7 +32,7 @@ const AboutEvent = () => {
                               fontSize: { xs: '1rem', md: '1rem' } 
                             }}
                         >
-                            Poetry House Party is your ticket to good times! From games and meaningful conversations to music and yummy food – we have a whole package of fun-filled activities you would not want to miss.
+                            Step into The Artist Room – where creativity meets community. Whether it’s thought-provoking conversations, fun games, live music, or tasty bites, this event brings together everything you need for a chill, inspiring, and memorable time.
                         </Typography>
                     </Grid>
                 </Grid>
