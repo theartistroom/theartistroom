@@ -3,14 +3,14 @@ import { Box, Typography, Grid } from '@mui/material';
 
 const reviews = [
   {
-    name: 'Shubham Sharma',
-    location: 'PHP - Bhopal',
-    text: `Poetry House Party was one of the best experiences I have ever had. Not only I got to meet new people but I also made some amazing friends there. I shared my poems with everyone and I really loved the response. I am glad I attended this event.`,
+    name: 'Rahul Sharma',
+    location: 'TAR - Gwalior',
+    text: `The Artist Room was one of the best experiences I’ve ever had. I not only met new people but also made some truly amazing friends. Sharing my poems with everyone was such a fulfilling moment, and the response I received meant a lot. I’m really glad I was part of this beautiful event.`,
   },
   {
-    name: 'Megha Mathew',
-    location: 'PHP - Nagpur',
-    text: `I used to write stories for quite a long time but I always kept it in my diary. Poetry House Party gave me a chance to explore my ability to perform on stage. The crowd was really delightful. I felt as if I was performing in front of my family and friends.`,
+    name: 'Megha Gupta',
+    location: 'TAR - Gwalior',
+    text: `I’ve been writing stories for a long time, but they always stayed tucked away in my diary. The Artist Room gave me the confidence and platform to finally share them on stage. The audience was incredibly warm and encouraging—I felt like I was performing in front of family and close friends.`,
   },
 ];
 
