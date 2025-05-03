@@ -49,13 +49,13 @@ const HostConnectedSoul = () => {
           gutterBottom
           sx={{ color: 'white', fontWeight: 'bold' }}
         >
-          host parties?
+          host events?
         </Typography>
         <Typography
           variant="body1"
           sx={{ color: 'white', marginBottom: 2 }}
         >
-          We are always looking for enthusiastic people to be a part of our team. Here's your chance to become a PHPian and show your event-planning skills. And don't worry, we will guide you in every step!
+          We’re always looking for passionate individuals to join our team. Here’s your chance to become a TAR member and showcase your event-planning skills. Don’t worry, we’ll be with you every step of the way to help you make it an unforgettable experience!
         </Typography>
         <Button variant="contained" color="secondary">
           Get in touch!
