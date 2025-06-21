@@ -17,15 +17,16 @@ const Home = () => {
     return (
         <>
             <Grid class="Home-Page">
-                <Header />
-                <Information />
-                <AboutEvent />
-                <EventCards />
-                <Gallery />
-                <Testimonials />
-                <HostConnectedSoul />
-                <FAQs />
-                <Footer />
+                <div>websit under construction</div>
+                // <Header />
+                // <Information />
+                // <AboutEvent />
+                // <EventCards />
+                // <Gallery />
+                // <Testimonials />
+                // <HostConnectedSoul />
+                // <FAQs />
+                // <Footer />
             </Grid>
         </>
     );
