@@ -17,7 +17,7 @@ const Home = () => {
     return (
         <>
             <Grid class="Home-Page">
-                <div>websit under construction</div>
+                <b>Website under construction</b>
              {/* <Header />
                 <Information />
                 <AboutEvent />
