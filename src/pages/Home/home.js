@@ -18,15 +18,15 @@ const Home = () => {
         <>
             <Grid class="Home-Page">
                 <div>websit under construction</div>
-                // <Header />
-                // <Information />
-                // <AboutEvent />
-                // <EventCards />
-                // <Gallery />
-                // <Testimonials />
-                // <HostConnectedSoul />
-                // <FAQs />
-                // <Footer />
+                <!--<Header />
+                <Information />
+                <AboutEvent />
+                <EventCards />
+                <Gallery />
+                <Testimonials />
+                <HostConnectedSoul />
+                <FAQs />
+                <Footer />-->
             </Grid>
         </>
     );
