@@ -17,8 +17,7 @@ const Home = () => {
     return (
         <>
             <Grid class="Home-Page">
-                <b>Website under construction</b>
-             {/* <Header />
+                <Header />
                 <Information />
                 <AboutEvent />
                 <EventCards />
@@ -26,7 +25,7 @@ const Home = () => {
                 <Testimonials />
                 <HostConnectedSoul />
                 <FAQs />
-                <Footer /> */}
+                <Footer />
             </Grid>
         </>
     );
