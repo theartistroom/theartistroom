@@ -48,10 +48,10 @@ const EventCards = () => {
                 sx={{ height: 200 }}
               />
               <CardContent sx={{ flexGrow: 1, textAlign: 'center' }}>
-                <Typography gutterBottom variant="h5" component="h2">
+                <Typography gutterBottom variant="h5" component="h2" sx={{ color: '#D45591', fontWeight: 700 }}>
                   {event.title}
                 </Typography>
-                <Typography>
+                <Typography sx={{ color: '#3f3f3f' }}>
                   {event.description}
                 </Typography>
               </CardContent>

@@ -11,7 +11,10 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from 'react-router-dom';
 
-const pages = ['Book Now', 'Contact Us'];
+const pages = [
+  { label: 'Book Now', path: '/payment' },
+  { label: 'Stays', path: '/stay' }
+];
 
 function Header() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -21,27 +24,38 @@ function Header() {
         setAnchorElNav(event.currentTarget);
     };
 
-    const handleCloseNavMenu = () => {
+    const handleNavigate = (path) => {
         setAnchorElNav(null);
-        navigate('/payment');
+        navigate(path);
     };
 
 
 
     return (
-        <AppBar position="static" color='transparent'>
+        <AppBar 
+          position="static" 
+          color='transparent'
+          sx={{
+            backdropFilter: 'blur(10px)',
+            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            boxShadow: '0 2px 20px rgba(0, 0, 0, 0.08)',
+            transition: 'all 0.3s ease'
+          }}
+        >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <img
                         src="/assets/images/theartistroomlogo.png"
                         alt="The Artist Room Logo"
                         style={{
-                            height: 65,
+                            height: 70,
                             marginRight: 12,
-                            borderRadius: 8,
+                            borderRadius: 12,
                             backgroundColor: '#fff',
-                            padding: 4,
-                            boxShadow: '0 0 8px rgba(0, 0, 0, 0.1)',
+                            padding: 8,
+                            boxShadow: '0 4px 15px rgba(212, 85, 145, 0.15)',
+                            transition: 'all 0.3s ease',
+                            cursor: 'pointer'
                           }}
                     />
                     
@@ -54,7 +68,7 @@ function Header() {
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
                             fontFamily: 'Arial, sans-serif',
-                            fontWeight: 500,
+                            fontWeight: 700,
                             color: '#D45591',
                             textDecoration: 'none',
                         }}
@@ -103,14 +117,14 @@ function Header() {
                                 horizontal: 'left',
                             }}
                             open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
+                            onClose={() => setAnchorElNav(null)}
                             sx={{
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                <MenuItem key={page.label} onClick={() => handleNavigate(page.path)}>
+                                    <Typography textAlign="center">{page.label}</Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -118,20 +132,41 @@ function Header() {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end', }}>
                         {pages.map((page) => (
                             <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
+                                key={page.label}
+                                onClick={() => handleNavigate(page.path)}
                                 sx={{
                                     my: 2,
                                     color: 'white',
                                     display: 'block',
                                     backgroundColor: '#D45591',
                                     margin: '0px 10px',
+                                    fontWeight: 700,
+                                    borderRadius: 2,
+                                    px: 3,
+                                    transition: 'all 0.3s ease',
+                                    position: 'relative',
+                                    overflow: 'hidden',
+                                    "&::before": {
+                                      content: '""',
+                                      position: 'absolute',
+                                      top: 0,
+                                      left: '-100%',
+                                      width: '100%',
+                                      height: '100%',
+                                      backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                                      transition: 'left 0.3s ease'
+                                    },
                                     "&:hover": {
-                                        backgroundColor: "#D45591"
+                                        backgroundColor: "#D45591",
+                                        transform: 'translateY(-3px)',
+                                        boxShadow: '0 8px 20px rgba(212, 85, 145, 0.4)',
+                                        "&::before": {
+                                          left: '100%'
+                                        }
                                     }
                                 }}
                             >
-                                {page}
+                                {page.label}
                             </Button>
                         ))}
                     </Box>

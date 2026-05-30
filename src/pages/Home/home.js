@@ -1,6 +1,5 @@
 import { Grid } from "@mui/material";
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Header from "../../components/header";
 import Information from "../../components/information";
 import AboutEvent from "../../components/aboutEvent";
@@ -10,12 +9,13 @@ import Testimonials from "../../components/testimonials";
 import FAQs from "../../components/faqs";
 import HostConnectedSoul from "../../components/hostConnectedSoul";
 import Footer from "../../components/footer";
+import SEO from "../../seo/SEO";
 
 const Home = () => {
-    const navigate = useNavigate();
 
     return (
         <>
+            <SEO title="The Artist Room — Home" description="Events, music, workshops, and community at The Artist Room. Book your spot now." />
             <Grid class="Home-Page">
                 <Header />
                 <Information />

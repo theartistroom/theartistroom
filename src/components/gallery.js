@@ -15,51 +15,111 @@ const images = [
 
 const Gallery = () => {
   return (
-    <Container sx={{ py: 4 }}>
-      <Typography 
-        variant="h6" 
-        gutterBottom align="center" 
-        sx={{ 
-            fontSize: { xs: '1rem', md: '1rem' } 
-        }}
-    >
-        WHAT WE PROVIDE
-      </Typography> 
-      <Typography variant="h4" gutterBottom align="center">
-        Glimpses from the Past
-      </Typography>
-      <Grid container spacing={2}>
+    <Container sx={{ py: 8 }}>
+      <Box sx={{ textAlign: 'center', mb: 6 }}>
+        <Typography 
+          variant="overline" 
+          sx={{ 
+              color: '#D45591', 
+              fontWeight: 700,
+              letterSpacing: 3,
+              fontSize: '0.9rem'
+          }}
+        >
+          📸 VISUAL MEMORIES 📸
+        </Typography> 
+        <Typography 
+          variant="h3" 
+          gutterBottom 
+          sx={{
+            fontWeight: 800,
+            mt: 2,
+            background: 'linear-gradient(135deg, #D45591 0%, #D45591 100%)',
+            backgroundClip: 'text',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent'
+          }}
+        >
+          Glimpses from The Artist Room
+        </Typography>
+        <Box sx={{ width: 60, height: 4, backgroundColor: '#D45591', mx: 'auto', mt: 3, borderRadius: 2 }} />
+        <Typography variant="body1" sx={{ color: '#666', mt: 3, maxWidth: 600, mx: 'auto' }}>
+          Experience the magic and creativity that unfolds at every event
+        </Typography>
+      </Box>
+      <Grid container spacing={3}>
         {images.map((image, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card>
+          <Grid item xs={12} sm={6} md={4} key={index} sx={{ animation: `fadeInUp 0.6s ease ${index * 0.08}s both` }}>
+            <Card 
+              sx={{
+                borderRadius: 3,
+                overflow: 'hidden',
+                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.08)',
+                transition: 'all 0.3s ease',
+                border: '2px solid rgba(212, 85, 145, 0.1)',
+                cursor: 'pointer',
+                '&:hover': {
+                  transform: 'translateY(-8px)',
+                  boxShadow: '0 12px 40px rgba(212, 85, 145, 0.25)',
+                  border: '2px solid #D45591'
+                }
+              }}
+            >
               <CardMedia
                 component="img"
-                height="200"
+                height="240"
                 image={image.src}
                 alt={image.alt}
-                sx={{ objectFit: 'cover' }}
+                sx={{ 
+                  objectFit: 'cover',
+                  transition: 'transform 0.3s ease',
+                  '&:hover': {
+                    transform: 'scale(1.08)'
+                  }
+                }}
               />
             </Card>
           </Grid>
         ))}
       </Grid>
-      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 4 }}>
-      <Button 
-            variant="contained" 
-            color="primary" 
-            size="large"
-            sx={{
-                my: 2,
-                color: 'white',
-                display: 'block',
-                backgroundColor: '#D45591',
-                margin: '0px 10px',
-                "&:hover": {
-                    backgroundColor: "#D45591"
-                }
-            }}
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 8 }}>
+        <Button 
+          variant="contained" 
+          color="primary" 
+          size="large"
+          sx={{
+            color: 'white',
+            backgroundColor: '#D45591',
+            fontWeight: 700,
+            py: 1.5,
+            px: 4,
+            fontSize: '1rem',
+            borderRadius: 3,
+            transition: 'all 0.3s ease',
+            boxShadow: '0 4px 15px rgba(212, 85, 145, 0.3)',
+            position: 'relative',
+            overflow: 'hidden',
+            "&::before": {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: '-100%',
+              width: '100%',
+              height: '100%',
+              backgroundColor: 'rgba(255, 255, 255, 0.2)',
+              transition: 'left 0.3s ease'
+            },
+            "&:hover": {
+              backgroundColor: "#D45591",
+              transform: 'translateY(-3px)',
+              boxShadow: '0 12px 25px rgba(212, 85, 145, 0.4)',
+              "&::before": {
+                left: '100%'
+              }
+            }
+          }}
         >
-            Book Now for ₹599/-
+          ✨ Book Now for ₹599/-
         </Button>
       </Box>
     </Container>
